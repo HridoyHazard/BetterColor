@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BetterColor/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/BetterColor/static/js/main.fed40cb4.chunk.js",
-    "main.js.map": "/BetterColor/static/js/main.fed40cb4.chunk.js.map",
+    "main.js": "/BetterColor/static/js/main.10989937.chunk.js",
+    "main.js.map": "/BetterColor/static/js/main.10989937.chunk.js.map",
     "runtime-main.js": "/BetterColor/static/js/runtime-main.cf1bafea.js",
     "runtime-main.js.map": "/BetterColor/static/js/runtime-main.cf1bafea.js.map",
     "static/js/2.c5db7412.chunk.js": "/BetterColor/static/js/2.c5db7412.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cf1bafea.js",
     "static/js/2.c5db7412.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.fed40cb4.chunk.js"
+    "static/js/main.10989937.chunk.js"
   ]
 }
