@@ -17,7 +17,7 @@ class home extends React.Component {
                 Select Color For Text:
                 <input type="color" id="text" defaultValue="#000000" />
               </p>
-              <a href="#">View On Github</a>
+              <a href="https://github.com/HridoyHazard/BetterColor">View On Github</a>
               <p id="right">
                 Select Color For Background:
                 <input type="color" id="color" defaultValue="#ffffff" />
