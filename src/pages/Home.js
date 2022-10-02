@@ -1,28 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./Home.css";
+export default function Home() {
+  const [color, setColor] = useState("rgb(215 220 218)");
+  const [background, setBackground] = useState("rgb(17, 24, 39)");
 
-class home extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <div id="upper">
-            <h1>BetterColor</h1>
+  useEffect(() => {
+    console.log(color);
+    console.log(background);
+  }, [color, background]);
+
+  return (
+    <div
+      className="container"
+      style={{ backgroundColor: `${background}`, color: `${color}` }}
+    >
+      <div className="cont">
+        <div className="upper">
+          <h2>BetterColor</h2>
+        </div>
+        <div className="mainBox">
+          <div className="main">
             <p>
               A Website For Finding Better Color Combinations For Readability
               <br />
               <br />
             </p>
-            <div id="click">
-              <p id="left">
-                Select Color For Text:
-                <input type="color" id="text" defaultValue="#000000" />
-              </p>
-              <a href="https://github.com/HridoyHazard/BetterColor">View On Github</a>
-              <p id="right">
-                Select Color For Background:
-                <input type="color" id="color" defaultValue="#ffffff" />
-              </p>
+          </div>
+          <div className="click">
+            <div className="left_code">
+              <div className="left">
+                <p>Select Color For Text:</p>
+                <input
+                  type="color"
+                  id="text"
+                  defaultValue="#000000"
+                  onChange={(e) => setColor(e.target.value)}
+                />
+              </div>
+              <div className="hex_code">
+                <p>{color}</p>
+              </div>
             </div>
+
+            <div className="right_code">
+              <div className="right">
+                <p>Select Color For Background:</p>
+                <input
+                  type="color"
+                  id="color"
+                  defaultValue="#ffffff"
+                  onChange={(e) => setBackground(e.target.value)}
+                />
+              </div>
+              <div className="hex_code">
+                <p>{background}</p>
+              </div>
+            </div>
+          </div>
+          <div className="link">
+            <button className="btn">
+              <a href="https://github.com/HridoyHazard/BetterColor">
+                View On Github
+              </a>
+            </button>
           </div>
           <div className="bg">
             <h2 id="one">Read Below Message</h2>
@@ -42,7 +82,6 @@ class home extends React.Component {
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
-export default home;
