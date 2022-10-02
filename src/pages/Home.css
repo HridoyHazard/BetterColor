@@ -1,0 +1,139 @@
+.container {
+  background-color: rgb(17, 24, 39);
+  min-height: 100vh;
+  padding: 10px 30px;
+  color: rgb(215 220 218);
+}
+
+.mainBox {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upper {
+  font-size: 1rem;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.main {
+  text-align: center;
+  margin-top: 30px;
+}
+.main p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.click {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.left,
+.right {
+  height: 140px;
+  width: 300px;
+  padding: 15px;
+  background-color: #1f2937;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.left_code,.right_code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left_code p,.right_code p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+button {
+  --green: #1bfd9c;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
+    0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+button:hover:before {
+  transform: translateX(15em);
+}
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: center;
+}
+#two,#message {
+  margin-top: 15px;
+}
+
+@media(max-width:672px){
+    .click{
+        flex-direction: column;
+    }
+    .right_code{
+        margin-top: 15px;
+    }
+}
