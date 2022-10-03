@@ -1,4 +1,4 @@
-<h1>Beter Color</h1>
+<h1>Better Color</h1>
 
 A Simple Project For BetterColor Readability. You Can Easily Choice Best Color Readability For Any Background.
 
