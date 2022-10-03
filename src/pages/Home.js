@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import Footer from "./Footer";
 export default function Home() {
   const [color, setColor] = useState("rgb(215 220 218)");
   const [background, setBackground] = useState("rgb(17, 24, 39)");
@@ -82,6 +83,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="foot">
+          <Footer color={color} background={background}/>
+        </div>
     </div>
   );
 }

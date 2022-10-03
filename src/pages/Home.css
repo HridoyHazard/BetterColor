@@ -1,6 +1,6 @@
 .container {
   background-color: rgb(17, 24, 39);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 10px 30px;
   color: rgb(215 220 218);
   text-shadow:0px 0px 3px black;
@@ -129,6 +129,10 @@ button:hover:before {
 }
 #two,#message {
   margin-top: 15px;
+}
+.foot{
+  display: flex;
+  z-index: 100;
 }
 
 @media(max-width:672px){
