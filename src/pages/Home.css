@@ -3,6 +3,7 @@
   min-height: 100vh;
   padding: 1px 1px;
   color: rgb(215 220 218);
+  text-shadow:0px 0px 3px black;
 }
 .header{
   background: linear-gradient(135deg, #172a74, #21a9af);
@@ -83,6 +84,7 @@
 a {
   color: white;
   text-decoration: none;
+  text-shadow:0px 0px 3px black;
   font-size: 1rem;
 }
 
