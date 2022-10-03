@@ -120,6 +120,7 @@ export default function Home() {
         <div class="footside2">
           <p class="footer_text">Connect with us</p>
           <div class="social">
+            
             <div className="social_icon">
               <a title="FB" href="https://good.com">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -127,6 +128,7 @@ export default function Home() {
                 </svg>
               </a>
             </div>
+
             <div className="social_icon">
               <a title="LI" href="https://good.com">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -134,6 +136,7 @@ export default function Home() {
                 </svg>
               </a>
             </div>
+
             <div className="social_icon">
               <a title="TW" href="https://good.com">
                 <svg
@@ -142,6 +145,7 @@ export default function Home() {
                 </svg>
               </a>
             </div>
+
             <div className="social_icon">
               <a title="GH" href="https://github.com/HridoyHazard/BetterColor">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
