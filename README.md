@@ -1,6 +1,6 @@
 <h1>Better Color</h1>
 
-A Simple Project For BetterColor Readability. You Can Easily Choice Best Color Readability For Any Background.
+A Simple Project For Better Color Readability. You Can Easily Choose Best Color Readability For Any Background.
 
 # Technologies and Tools :
 * React.Js
