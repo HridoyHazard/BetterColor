@@ -15,7 +15,6 @@ export default function Home() {
       style={{ backgroundColor: `${background}`, color: `${color}` }}
     >
       <div className="cont">
-        <header className="header">
         <div className="upper">
           <h2>BetterColor</h2>
         </div>
@@ -65,8 +64,6 @@ export default function Home() {
               </a>
             </button>
           </div>
-          </div>
-        </header>
           <div className="bg">
             <h2 id="one">Read Below Message</h2>
             <p id="two">
@@ -83,52 +80,8 @@ export default function Home() {
               Then Copy The Color Code.Else Change Colors.
             </p>
           </div>
-          <div className="footer">
-            <div className="footside">
-                <h1 className="footer_name">
-                    <a title="" href="https://good.com">
-                    BetterColor
-                    </a>
-                </h1>
-                <ul className="footer_list">
-                    <li class="footer_item">
-                        <a title="about" href="https://good.com">About</a>
-                    </li>
-                    <li className="footer_item">
-                        <a title="contact" href="https://good.com">Contact</a>
-                    </li>
-                    <li class="footer_item">
-                        <a title="contact" href="https://good.com">Support</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            <div class="footside2">
-                <p class="footer_text">
-                   Connect with us
-                </p>
-                <div class="social">
-                    <div className="social_icon">
-                        <a title="FB" href="https://good.com">
-                            <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/facebook-16x16-761599_vlf1xl.png"/>
-                        </a>
-                    </div>
-                    <div className="social_icon">
-                        <a title="LI" href="https://good.com">
-                            <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/linkedin-16x16-761611_a8dv2c.png"/>
-                        </a>
-                    </div>
-                    <div className="social_icon">
-                        <a title="TW" href="https://good.com">
-                            <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/fa_twitter-16x16-761629_rhy95g.png"/>
-                        </a>
-                    </div>
-                    <div className="social_icon">
-                        <a title="GH" href="https://github.com/HridoyHazard/BetterColor">
-                            <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1664749375/samples/food/github-16x16-761603_vwximd.png"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
-      </div>);
+      </div>
+    </div>
+  );
+}

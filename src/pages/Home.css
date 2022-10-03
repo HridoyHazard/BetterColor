@@ -1,20 +1,11 @@
 .container {
   background-color: rgb(17, 24, 39);
   min-height: 100vh;
-  padding: 1px 1px;
+  padding: 10px 30px;
   color: rgb(215 220 218);
   text-shadow:0px 0px 3px black;
 }
-.header{
-  background: linear-gradient(135deg, #172a74, #21a9af);
-  background-color: #184e8e;
-  padding-bottom: 80px;
-  width: 100%;
-  max-height: max-content;
-  display: block;
-  color: #efb22d;
-  font-family: "Source Sans Pro", sans-serif;
-}
+
 .mainBox {
   min-height: 70vh;
   display: flex;
@@ -23,16 +14,14 @@
   align-items: center;
 }
 .upper {
-  font-size: 1.3rem;
+  font-size: 1rem;
   height: 10vh;
   display: flex;
-  margin-left: 80px;
   align-items: center;
 }
 .main {
   text-align: center;
-  margin-top: 0px;
-  color: rgb(215 220 218);
+  margin-top: 30px;
 }
 .main p {
   font-size: 1.5rem;
@@ -45,7 +34,7 @@
 }
 .left,
 .right {
-  height: 110px;
+  height: 140px;
   width: 300px;
   padding: 15px;
   background-color: #1f2937;
@@ -61,18 +50,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    background-color:#1f2937 ;
-   border-radius: 10px;
 }
 .left_code p,.right_code p{
-    margin-top: -5px;
+    margin-top: 5px;
     font-size: 18px;
-    color: rgb(215 220 218);
-}
-.hex_code{
-  margin-top: 10px;
-  color: rgb(215 220 218);
 }
 .link {
   display: flex;
@@ -89,7 +70,7 @@ a {
 }
 
 button {
-  --white: rgb(215 220 218) ;
+  --green: #1bfd9c;
   font-size: 15px;
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
@@ -99,7 +80,7 @@ button {
   overflow: hidden;
   transition: all 0.3s;
   line-height: 1.4em;
-  border: 2px solid var(--white);
+  border: 2px solid var(--green);
   background: linear-gradient(
     to right,
     rgba(27, 253, 156, 0.1) 1%,
@@ -145,147 +126,16 @@ button:hover:before {
   flex-direction: column;
   margin-top: 30px;
   text-align: center;
-  display: block;
 }
 #two,#message {
   margin-top: 15px;
-  margin-bottom: 50px;
-}
-.footer{
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: space-around;
-  background-color: rgb(17, 24, 39);
-  border-top:rgb(215 220 218);
-  border-top-style: solid;
-  border-width: 0.01px;
-}
-.footside {
-  display: flex;
-  flex-direction: row;
-  padding-top: 30px;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-color:rgb(17, 24, 39); ;
-}
-.footside2{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  margin-top: -40px;
-  background-color:rgb(17, 24, 39);;
 }
 
-.footname a{
-  color: rgb(215 220 218);
-}
-.footer_name a{
- font-size: 1em;
-}
-.footer_list{
-  position: relative;
-  display: flex;
-  list-style: none;
-  margin-left: 40px;
-  padding-top: 25px;
-}
-.footer_item{
-  position: relative;
-  display: flex;
-  margin-top: -15px;
-  padding-right: 25px;
-  font-size: 15px;
-}
-.social{
-  position: relative;
-  display: flex;
-  padding-left: 0px;
-  padding-top: 0px;
-}
-.social_icon{
-  position: relative;
-  background-color: rgb(215 220 218);
-  margin-left: 10px;
-  width: 20px;
-  height: 20px;
-  padding-left: 2px;
-  padding-top:2px ;
-  align-items: center;
-}
-.social_icon img{
-width: 15px;
-height: 15px;
-}
-.footer_text{
-  font-size: 13px;
-}
 @media(max-width:672px){
     .click{
         flex-direction: column;
     }
     .right_code{
         margin-top: 15px;
-    }
-    .left,
-.right {
-  height: 110px;
-  width: 300px;
-  padding: 15px;
- 
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.hex_code{
-  margin-top: 10px;
-  margin-left: 5px;
-  color: rgb(215 220 218);
-}
-    .left_code,.right_code{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: 150px;
-      background-color:#1f2937 ;
-     border-radius: 10px;
-  }
-    .mainBox {
-      min-height: 70vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: -50px;
-    }
-    .footer{
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-      background-color: rgb(17, 24, 39);;
-    }
-    .footside {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 150px;
-      background-color:rgb(17, 24, 39);;
-    }
-    .footside2{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 150px;
-      background-color:rgb(17, 24, 39); ;
-      padding-top: 7px;
     }
 }
