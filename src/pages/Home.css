@@ -220,6 +220,7 @@ button:hover:before {
     display: flex;
     padding-left: 0px;
     padding-top: 0px;
+    background-color: white;
 }
 
 .social_icon {
