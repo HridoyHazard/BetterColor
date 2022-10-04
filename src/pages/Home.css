@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.main-container {
   background-color: rgb(17, 24, 39);
   min-height: 100vh;
   padding: 1px 1px;
