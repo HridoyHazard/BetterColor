@@ -127,7 +127,7 @@ button {
     transition: all 0.3s;
     line-height: 1.4em;
     border: 2px solid var(--white);
-    background: linear-gradient( to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
     color: var(--green);
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
     margin-top: 2%;
@@ -146,7 +146,7 @@ button:before {
     height: 100%;
     top: 0;
     transition: transform 0.4s ease-in-out;
-    background: linear-gradient( to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
 }
 
 button:hover:before {
@@ -269,9 +269,11 @@ button:hover:before {
     .click {
         flex-direction: column;
     }
+
     .right_code {
         margin-top: 15px;
     }
+
     .left,
     .right {
         height: 110px;
@@ -284,21 +286,24 @@ button:hover:before {
         justify-content: space-around;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
     .hex_code {
         margin-top: 10px;
         margin-left: 5px;
         color: rgb(215 220 218);
     }
+
     .left_code,
     .right_code {
         display: flex;
         /* flex-direction: row; */
         justify-content: center;
         align-items: center;
-        height: 150px;
+        height: 200px;
         background-color: #1f2937;
         border-radius: 10px;
     }
+
     .mainBox {
         min-height: 70vh;
         display: flex;
@@ -306,6 +311,7 @@ button:hover:before {
         justify-content: center;
         align-items: center;
     }
+
     .footer {
         display: flex;
         width: 100%;
@@ -313,6 +319,7 @@ button:hover:before {
         background-color: rgb(17, 24, 39);
         ;
     }
+
     .footside {
         display: flex;
         flex-direction: column;
@@ -322,6 +329,7 @@ button:hover:before {
         background-color: rgb(17, 24, 39);
         ;
     }
+
     .footside2 {
         display: flex;
         flex-direction: column;
@@ -332,17 +340,25 @@ button:hover:before {
         ;
         padding-top: 7px;
     }
+
     .right_code {
         grid-column-start: auto;
         grid-row-start: 2;
     }
+
     .bg {
         grid-column-start: auto;
         grid-row-start: 3;
     }
+
     .click {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+    }
+
+    button {
+        padding: 0.3em 2.7em;
+
     }
 }
