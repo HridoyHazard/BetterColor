@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .container {
     background-color: rgb(17, 24, 39);
     min-height: 100vh;
@@ -29,7 +35,7 @@
     font-size: 1.3rem;
     height: 10vh;
     display: flex;
-    margin-left: 80px;
+    padding-left: 80px;
     align-items: center;
 }
 
@@ -45,9 +51,9 @@
 }
 
 .click {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    justify-content: space-around;
 }
 
 .left,
@@ -64,15 +70,22 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.right_code {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
 .left_code,
 .right_code {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: min-content;
     background-color: #1f2937;
     border-radius: 10px;
+    margin: auto;
+    padding: 10px;
 }
 
 .left_code p,
@@ -110,13 +123,14 @@ button {
     position: relative;
     font-family: inherit;
     border-radius: 0.6em;
-    overflow: hidden;
+    overflow-x: hidden;
     transition: all 0.3s;
     line-height: 1.4em;
     border: 2px solid var(--white);
     background: linear-gradient( to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
     color: var(--green);
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    margin-top: 2%;
 }
 
 button:hover {
@@ -144,18 +158,27 @@ button:hover:before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin: 30px 20px;
     text-align: center;
     display: block;
-    padding: 0 10%;
+    padding: 2% 5%;
     line-height: 1.75;
     font-weight: -500;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 10px;
 }
 
 #two,
 #message {
     margin-top: 15px;
     margin-bottom: 50px;
+}
+
+#message {
+    color: black;
+    font-weight: 600;
 }
 
 .footer {
@@ -269,7 +292,7 @@ button:hover:before {
     .left_code,
     .right_code {
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: center;
         align-items: center;
         height: 150px;
@@ -282,7 +305,6 @@ button:hover:before {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -50px;
     }
     .footer {
         display: flex;
@@ -309,5 +331,18 @@ button:hover:before {
         background-color: rgb(17, 24, 39);
         ;
         padding-top: 7px;
+    }
+    .right_code {
+        grid-column-start: auto;
+        grid-row-start: 2;
+    }
+    .bg {
+        grid-column-start: auto;
+        grid-row-start: 3;
+    }
+    .click {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
 }
