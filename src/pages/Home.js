@@ -22,6 +22,7 @@ export default function Home() {
 
   return (
     <>
+      {/* Header App */}
       <header className="header">
         <br />
         <h1>BetterColor</h1>
@@ -31,63 +32,78 @@ export default function Home() {
         </p>
         <br />
       </header>
-
+      {/* Main App */}
       <div className="main">
-        <div className="click">
-          <div className="left_code">
-            <div className="left">
-              <p>Select Color For Text:</p>
-              <input
-                type="color"
-                id="text"
-                defaultValue="#000000"
-                onChange={(e) => setColor(e.target.value)}
-              />
+        <div className="main-section">
+          <div className="selector">
+            <div className="color_selector">
+              <div className="color-picker">
+                <p>Select Color For Text:</p>
+              </div>
+              <div className="color-picker">
+                <input
+                  type="color"
+                  id="text"
+                  defaultValue="#000000"
+                  onChange={(e) => setColor(e.target.value)}
+                />
+              </div>
+              <div className="color-picker">
+                <div className="hex_code">
+                  <p>{color}</p>
+                </div>
+                <button onClick={() => navigator.clipboard.writeText(color)}>
+                  Copy Me!
+                </button>
+              </div>
             </div>
-            <div className="hex_code">
-              <p>{color}</p>
+            <div className="color_selector">
+              <div className="color-picker">
+                <p>Select Color For Background:</p>
+              </div>
+              <div className="color-picker">
+                <input
+                  type="color"
+                  id="color"
+                  defaultValue="#ffffff"
+                  onChange={(e) => setBackground(e.target.value)}
+                />
+              </div>
+              <div className="color-picker">
+                <div className="hex_code">
+                  <p>{background}</p>
+                </div>
+                <button
+                  onClick={() => navigator.clipboard.writeText(background)}>
+                  Copy Me!
+                </button>
+              </div>
             </div>
-            <button onClick={() => navigator.clipboard.writeText(color)}>
-              Copy Me!
-            </button>
           </div>
-          <div className="right_code">
-            <div className="right">
-              <p>Select Color For Background:</p>
-              <input
-                type="color"
-                id="color"
-                defaultValue="#ffffff"
-                onChange={(e) => setBackground(e.target.value)}
-              />
-            </div>
-            <div className="hex_code">
-              <p>{background}</p>
-            </div>
-            <button
-              onClick={() => navigator.clipboard.writeText(background)}>
-              Copy Me!
-            </button>
-          </div>
+
           <div
             className="bg">
-            <div className="text" style={{ backgroundColor: `${background}`, color: `${color}` }}>
-              <h2 id="one">Read This Message</h2>
-              <p id="two">
-                When you work for peace or any other aspect of social
-                change, there are often hardships to overcome. You must
-                believe deeply that what you are doing is right, or else you
-                may become discouraged and give up. I have found that there
-                are no easy solutions to problems involving social change.
-                When you commit yourself to creating a better world, you are
-                most likely committing yourself to a lifetime of effort.
+            <div className="container">
+              <div className="text" style={{ backgroundColor: `${background}`, color: `${color}` }}>
+                <h2 id="one">Read This Message</h2>
+                <p id="two">
+                  When you work for peace or any other aspect of social
+                  change, there are often hardships to overcome. You must
+                  believe deeply that what you are doing is right, or else you
+                  may become discouraged and give up. I have found that there
+                  are no easy solutions to problems involving social change.
+                  When you commit yourself to creating a better world, you are
+                  most likely committing yourself to a lifetime of effort.
+                </p>
+              </div>
+            </div>
+            <div className="container">
+              <p id="message">
+                Can You Read The Message Above Comfortably With This
+                Background? If Yes, Then Copy The Color Code. Else Try
+                Changing Colors.
               </p>
             </div>
-            <p id="message">
-              Can You Read The Message Above Comfortably With This
-              Background? If Yes, Then Copy The Color Code. Else Try
-              Changing Colors.
-            </p>
           </div>
         </div>
         <div className="link">
@@ -98,27 +114,27 @@ export default function Home() {
           </button>
         </div>
       </div>
-
+      {/* Footer App */}
       <footer className="footer">
         <div className="footside">
           <h1 className="footer_name">
-            <a title="" href="#">
+            <a title="" href="/">
               BetterColor
             </a>
           </h1>
           <ul className="footer_list">
             <li class="footer_item">
-              <a title="about" href="#">
+              <a title="about" href="/">
                 About
               </a>
             </li>
             <li className="footer_item">
-              <a title="contact" href="#">
+              <a title="contact" href="/">
                 Contact
               </a>
             </li>
             <li class="footer_item">
-              <a title="contact" href="#">
+              <a title="contact" href="/">
                 Support
               </a>
             </li>
@@ -161,6 +177,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <br />
       </footer>
     </>
   );
