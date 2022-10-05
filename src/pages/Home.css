@@ -113,15 +113,12 @@ button:hover:before {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .selector {
   display: flex;
   flex-wrap: wrap;
-align-content: space-around;
-  width: 100%;
+  align-content: space-between;
 }
 
 .color_selector {
@@ -281,6 +278,11 @@ footer {
     margin-bottom: 10px;
   }
   
+  .selector{
+    flex-wrap: wrap;
+    display: block;
+  }
+
   .color-picker {
     display: flex;
     flex-direction: row;
