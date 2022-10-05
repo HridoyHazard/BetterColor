@@ -13,3 +13,6 @@ Improve the readability of text in your projects! Easily choose the most readabl
 * Change the color of text and backgrounds at your wish!
 * Export color code values in multiple formats!
 * Easily find the best background for any color text!
+
+# Screenshots:
+![05-10-2022](https://user-images.githubusercontent.com/37242269/193970973-07cdd9d2-ab88-4f25-8226-62908534a6ea.PNG)
