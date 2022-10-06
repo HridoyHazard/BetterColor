@@ -42,7 +42,7 @@ export default function Home() {
                   <input
                     type="color"
                     id="text"
-                    defaultValue="#000000"
+                    defaultValue="#D7DCDA"
                     onChange={(e) => setColor(e.target.value)}
                   />
                 </div>
@@ -60,7 +60,7 @@ export default function Home() {
                   <input
                     type="color"
                     id="color"
-                    defaultValue="#ffffff"
+                    defaultValue="#111827"
                     onChange={(e) => setBackground(e.target.value)}
                   />
                 </div>
