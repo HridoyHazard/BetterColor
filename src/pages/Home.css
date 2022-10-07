@@ -201,9 +201,18 @@ button:hover:before {
   background-color: #1f2937;
   padding: 2% 5%;
   color: white;
+  font-weight: 400;
+}
+
+.recommended {
+  color: green;
   font-weight: 600;
 }
 
+.notRecommended {
+  color: red;
+  font-weight: 600;
+}
 
 
 /*footer styles*/

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import colorContrast from "color-contrast";
 import "./Home.css";
 
 export default function Home() {
-  const [color, setColor] = useState("rgb(215 220 218)");
-  const [background, setBackground] = useState("rgb(17, 24, 39)");
+  const [color, setColor] = useState("#d7dcda");
+  const [background, setBackground] = useState("#111827");
+  const contrastRatio = colorContrast(color, background).toFixed(1);
 
   useEffect(() => {
     console.log(color);
@@ -68,13 +70,19 @@ export default function Home() {
                   <p>{background}</p>
                 </div>
                 <button
-                  onClick={() => navigator.clipboard.writeText(background)}>
+                  onClick={() => navigator.clipboard.writeText(background)}
+                >
                   Copy Me!
                 </button>
               </div>
-              <div
-                className="bg">
-                <div className="text" style={{ backgroundColor: `${background}`, color: `${color}` }}>
+              <div className="bg">
+                <div
+                  className="text"
+                  style={{
+                    backgroundColor: `${background}`,
+                    color: `${color}`,
+                  }}
+                >
                   <h2 id="one">Read This Message</h2>
                   <p id="two">
                     When you work for peace or any other aspect of social
@@ -90,6 +98,22 @@ export default function Home() {
                   Can You Read The Message Above Comfortably With This
                   Background? If Yes, Then Copy The Color Code. Else Try
                   Changing Colors.
+                  <p>
+                    WCAG 2.0 level AA requires a contrast ratio of at least
+                    4.5:1 for normal text and 3:1 for large text.
+                  </p>
+                  <p>
+                    Your current selection has contrast ratio of{" "}
+                    {contrastRatio >= 4.5 ? (
+                      <span className="recommended">
+                        {contrastRatio} (Recommended for normal text)
+                      </span>
+                    ) : (
+                      <span className="notRecommended">
+                        {contrastRatio} (Not Recommended for normal text)
+                      </span>
+                    )}
+                  </p>
                 </p>
               </div>
             </div>
