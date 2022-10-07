@@ -116,15 +116,15 @@ a {
 
 button {
   --white: rgb(215 220 218);
-  font-size: 15px;
-  padding: 0.7em 2.7em;
+  font-size: 15px;  
+  padding: 1rem;
   letter-spacing: 0.06em;
   position: relative;
   font-family: inherit;
   border-radius: 0.6em;
   overflow-x: hidden;
   transition: all 0.3s;
-  line-height: 1.4em;
+  line-height: 0rem;  
   border: 2px solid var(--white);
   background: linear-gradient(
     to right,
@@ -137,6 +137,7 @@ button {
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
     0 0 9px 3px rgba(27, 253, 156, 0.1);
   margin-top: 2%;
+  
 }
 
 button:hover {
@@ -361,5 +362,17 @@ button:hover:before {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+  }  
+}
+@media (max-width: 780px){
+  .link{
+    margin-top: 0%;
+  }
+}
+@media (max-width: 375px) {
+
+  .left_code,
+  .right_code, .left, .right {
+    max-width: 90%;
   }
 }
