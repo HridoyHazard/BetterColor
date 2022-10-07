@@ -7,7 +7,7 @@
 
 body {
   background: linear-gradient(135deg, #172a74, #21a9af);
-  background-color: #184e8e;
+  background-color: #000000;
   color: rgb(215 220 218);
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
@@ -25,6 +25,7 @@ a {
 }
 
 button {
+  cursor: pointer;
   --white: rgb(215 220 218);
   font-size: 15px;
   padding: 0.7em 2.7em;
@@ -36,11 +37,13 @@ button {
   transition: all 0.3s;
   line-height: 1.4em;
   border: 2px solid var(--white);
-  background: linear-gradient(to right,
-      rgba(27, 253, 156, 0.1) 1%,
-      transparent 40%,
-      transparent 60%,
-      rgba(27, 253, 156, 0.1) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
   color: var(--green);
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
     0 0 9px 3px rgba(27, 253, 156, 0.1);
@@ -61,11 +64,13 @@ button:before {
   height: 100%;
   top: 0;
   transition: transform 0.4s ease-in-out;
-  background: linear-gradient(to right,
-      transparent 1%,
-      rgba(27, 253, 156, 0.1) 40%,
-      rgba(27, 253, 156, 0.1) 60%,
-      transparent 100%);
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
 }
 
 button:hover:before {
@@ -82,12 +87,16 @@ button:hover:before {
   max-height: max-content;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
   height: 8em;
+  padding: 10px 0 20px 80px;
 }
 
 .header h1 {
-  padding-left: 80px;
   color: #efb22d;
+  /* border: 1px solid red; */
+  font-family: "Dancing Script", cursive;
 }
 
 .header p {
@@ -116,7 +125,9 @@ button:hover:before {
 }
 
 .selector {
+  margin-left: 5vw;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
 }
@@ -139,7 +150,7 @@ button:hover:before {
   color: rgb(215 220 218);
 }
 
-.color-picker{
+.color-picker {
   height: 110px;
   width: 300px;
   padding: 15px;
@@ -162,9 +173,7 @@ button:hover:before {
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
-
 
 .bg {
   display: flex;
@@ -174,7 +183,8 @@ button:hover:before {
   line-height: 1.75;
   font-weight: -500;
   border-radius: 10px;
-  width: 100%;
+  width: 60vw;
+  margin-right: 5vw;
 }
 
 .text {
@@ -200,11 +210,12 @@ footer {
   width: 100%;
   height: 8em;
   justify-content: space-around;
-  background-color: rgb(17, 24, 39);
-  border-top: rgb(215 220 218);
+  background-color: #111827;
+  border-top: #d7dcda;
   border-top-style: solid;
   border-width: 0.01px;
   margin-top: 30px;
+  padding-top: 2vh;
 }
 
 .footside {
@@ -212,15 +223,16 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgb(17, 24, 39);
+  background-color: #111827;
 }
 
 .footname a {
-  color: rgb(215 220 218);
+  color: #d7dcda;
 }
 
 .footer_name a {
   font-size: 1em;
+  font-family: "Dancing Script", cursive;
 }
 
 .footer_list {
@@ -268,29 +280,30 @@ footer {
 
 /* End  Footer Component */
 
-
-
 /* Media devices */
 
 @media (max-width: 768px) {
-  
   header {
     margin-bottom: 10px;
   }
-  
-  .selector{
+
+  .selector {
     flex-wrap: wrap;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 68%;
   }
 
   .color-picker {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: #64646f33 0px 7px 29px 0px;
   }
 
-  
   .main {
     min-height: 70vh;
     display: flex;
@@ -308,14 +321,15 @@ footer {
 
   .hex_code {
     padding: 10px;
-    color: rgb(215 220 218);
+    color: #d7dcda;
   }
-  
+
   .color_selector {
     display: flex;
     flex-direction: column;
     height: 20em;
     margin-top: 20px;
+    width: 50vw;
   }
 
   footer {
@@ -330,9 +344,10 @@ footer {
     border-width: 0.01px;
     margin-top: 30px;
   }
-  
+
   button {
     padding: 0.7em 2.7em;
+    cursor: pointer;
   }
 
   .footside {
@@ -341,12 +356,12 @@ footer {
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: rgb(17, 24, 39);
+    background-color: #111827;
+    margin: 5px;
   }
 
   .container {
     margin-top: 15px;
-
+    /* border: 1px solid red; */
   }
-
 }
