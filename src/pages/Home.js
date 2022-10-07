@@ -102,10 +102,12 @@ export default function Home() {
             </div>
           </div>
         </header>
-        <div className="footer">
+        {/* footer */}
+        <footer>
+
           <div className="footside">
             <h1 className="footer_name">
-              <a title="" href="#">
+              <a title="bettercolor" href="#">
                 BetterColor
               </a>
             </h1>
@@ -121,50 +123,52 @@ export default function Home() {
                 </a>
               </li>
               <li class="footer_item">
-                <a title="contact" href="#">
+                <a title="support" href="#">
                   Support
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="footside2">
-          <p class="footer_text">Connect with us</p>
-          <div class="social">
-            <div className="social_icon">
-              <a title="FB" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/facebook-16x16-761599_vlf1xl.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="LI" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/linkedin-16x16-761611_a8dv2c.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="TW" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/fa_twitter-16x16-761629_rhy95g.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="GH" href="https://github.com/HridoyHazard/BetterColor">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1664749375/samples/food/github-16x16-761603_vwximd.png"
-                />
-              </a>
+
+          <div class="footside2">
+            <p class="footer_text">Connect with us</p>
+            <div class="social">
+              <div className="social_icon">
+                <a title="FB" href="">
+                  <img
+                    alt="lo"
+                    src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/facebook-16x16-761599_vlf1xl.png"
+                  />
+                </a>
+              </div>
+              <div className="social_icon">
+                <a title="LI" href="">
+                  <img
+                    alt="lo"
+                    src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/linkedin-16x16-761611_a8dv2c.png"
+                  />
+                </a>
+              </div>
+              <div className="social_icon">
+                <a title="TW" href="">
+                  <img
+                    alt="lo"
+                    src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/fa_twitter-16x16-761629_rhy95g.png"
+                  />
+                </a>
+              </div>
+              <div className="social_icon">
+                <a title="GH" href="https://github.com/HridoyHazard/BetterColor">
+                  <img
+                    alt="lo"
+                    src="https://res.cloudinary.com/slmedia/image/upload/v1664749375/samples/food/github-16x16-761603_vwximd.png"
+                  />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+
+        </footer>
       </div>
     </div>
   );
