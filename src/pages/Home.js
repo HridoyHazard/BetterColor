@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import { AiFillFacebook } from "react-icons/ai";
+import Footer from "../components/footer";
 
 export default function Home() {
   const [color, setColor] = useState("rgb(215 220 218)");
@@ -27,9 +29,7 @@ export default function Home() {
         <br />
         <h1>BetterColor</h1>
         <br />
-        <p>
-          A Website For Finding Better Color Combinations For Readability
-        </p>
+        <p>A Website For Finding Better Color Combinations For Readability</p>
         <br />
       </header>
       {/* Main App */}
@@ -74,34 +74,36 @@ export default function Home() {
                   <p>{background}</p>
                 </div>
                 <button
-                  onClick={() => navigator.clipboard.writeText(background)}>
+                  onClick={() => navigator.clipboard.writeText(background)}
+                >
                   Copy Me!
                 </button>
               </div>
             </div>
           </div>
 
-          <div
-            className="bg">
+          <div className="bg">
             <div className="container">
-              <div className="text" style={{ backgroundColor: `${background}`, color: `${color}` }}>
+              <div
+                className="text"
+                style={{ backgroundColor: `${background}`, color: `${color}` }}
+              >
                 <h2 id="one">Read This Message</h2>
                 <p id="two">
-                  When you work for peace or any other aspect of social
-                  change, there are often hardships to overcome. You must
-                  believe deeply that what you are doing is right, or else you
-                  may become discouraged and give up. I have found that there
-                  are no easy solutions to problems involving social change.
-                  When you commit yourself to creating a better world, you are
-                  most likely committing yourself to a lifetime of effort.
+                  When you work for peace or any other aspect of social change,
+                  there are often hardships to overcome. You must believe deeply
+                  that what you are doing is right, or else you may become
+                  discouraged and give up. I have found that there are no easy
+                  solutions to problems involving social change. When you commit
+                  yourself to creating a better world, you are most likely
+                  committing yourself to a lifetime of effort.
                 </p>
               </div>
             </div>
             <div className="container">
               <p id="message">
-                Can You Read The Message Above Comfortably With This
-                Background? If Yes, Then Copy The Color Code. Else Try
-                Changing Colors.
+                Can You Read The Message Above Comfortably With This Background?
+                If Yes, Then Copy The Color Code. Else Try Changing Colors.
               </p>
             </div>
           </div>
@@ -115,71 +117,7 @@ export default function Home() {
         </div>
       </div>
       {/* Footer App */}
-      <footer className="footer">
-        <div className="footside">
-          <h1 className="footer_name">
-            <a title="" href="/">
-              BetterColor
-            </a>
-          </h1>
-          <ul className="footer_list">
-            <li class="footer_item">
-              <a title="about" href="/">
-                About
-              </a>
-            </li>
-            <li className="footer_item">
-              <a title="contact" href="/">
-                Contact
-              </a>
-            </li>
-            <li class="footer_item">
-              <a title="contact" href="/">
-                Support
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footside">
-          <p class="footer_text">Connect with us</p>
-          <div class="social">
-            <div className="social_icon">
-              <a title="FB" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/facebook-16x16-761599_vlf1xl.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="LI" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/linkedin-16x16-761611_a8dv2c.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="TW" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/fa_twitter-16x16-761629_rhy95g.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="GH" href="https://github.com/HridoyHazard/BetterColor">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1664749375/samples/food/github-16x16-761603_vwximd.png"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <br />
-      </footer>
+      <Footer />
     </>
-
   );
 }
