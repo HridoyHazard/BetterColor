@@ -22,11 +22,80 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <title>BetterColor</title>
+
+  <!-- Loader styling and animations -->
+  <style>
+    .preloader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      padding: 0px;
+      text-align: left;
+    }
+
+    .loader span {
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background: #184e8e;
+      -webkit-animation: loader 1.5s linear infinite;
+      animation: loader 1.5s linear infinite;
+    }
+
+    .loader span:last-child {
+      animation-delay: -0.9s;
+      -webkit-animation-delay: -0.9s;
+    }
+
+    @keyframes loader {
+      0% {
+        transform: scale(0, 0);
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: scale(1, 1);
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes loader {
+      0% {
+        -webkit-transform: scale(0, 0);
+        opacity: 0.8;
+      }
+
+      100% {
+        -webkit-transform: scale(1, 1);
+        opacity: 0;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <div id="root">
+    <!-- This a preloader which loads before react componenets get rendered inside the root div -->
+    <div class="preloader">
+      <div class="loader">
+        <span></span>
+        <span></span>
+      </div>
+    </div>>
+
+  </div>
 </body>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/bootstrap/js/script.js"></script>
