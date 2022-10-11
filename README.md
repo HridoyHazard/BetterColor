@@ -1,6 +1,6 @@
 <h1 align="center">BetterColor <img src="https://github.com/HridoyHazard/BetterColor/blob/source/public/assets/img/view.png" alt="logo" width="30px" height="30px"></h1>
 
-<a href="https://github.com/HridoyHazard/BetterColor"><img src="https://user-images.githubusercontent.com/59679281/193782491-5379b3ce-aed7-4e85-8a63-41e31b5126fc.png" alt="website's picture"></a>
+<a align="center" href="https://github.com/HridoyHazard/BetterColor"><img src="https://user-images.githubusercontent.com/59679281/193782491-5379b3ce-aed7-4e85-8a63-41e31b5126fc.png" height="450px" alt="website's picture"></a>
 
 ### A Simple Project For Better Color Readability. You can easily choose best color readability for any background.
 ### Improve the readability of text in your projects!
@@ -17,6 +17,11 @@
 * Change the color of text and backgrounds at your wish!
 * Export color code values in multiple formats!
 * Easily find the best background for any color text!
+
+## Our Contributors
+<a href="https://github.com/HridoyHazard/BetterColor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=HridoyHazard/BetterColor" />
+</a>
 
 ## This project is a part of HacktoberFest 2022
 
