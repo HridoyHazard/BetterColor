@@ -36,11 +36,13 @@ button {
   transition: all 0.3s;
   line-height: 1.4em;
   border: 2px solid var(--white);
-  background: linear-gradient(to right,
-      rgba(27, 253, 156, 0.1) 1%,
-      transparent 40%,
-      transparent 60%,
-      rgba(27, 253, 156, 0.1) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
   color: var(--green);
   box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
     0 0 9px 3px rgba(27, 253, 156, 0.1);
@@ -61,11 +63,13 @@ button:before {
   height: 100%;
   top: 0;
   transition: transform 0.4s ease-in-out;
-  background: linear-gradient(to right,
-      transparent 1%,
-      rgba(27, 253, 156, 0.1) 40%,
-      rgba(27, 253, 156, 0.1) 60%,
-      transparent 100%);
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
 }
 
 button:hover:before {
@@ -139,7 +143,7 @@ button:hover:before {
   color: rgb(215 220 218);
 }
 
-.color-picker{
+.color-picker {
   height: 110px;
   width: 300px;
   padding: 15px;
@@ -162,9 +166,7 @@ button:hover:before {
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
-
 
 .bg {
   display: flex;
@@ -261,9 +263,10 @@ footer {
   margin-left: 10px;
   width: 20px;
   height: 20px;
+  width: fit-content;
+  padding-right: 2px;
   padding-left: 2px;
   padding-top: 2px;
-  align-items: center;
 }
 
 .social_icon img {
@@ -277,17 +280,14 @@ footer {
 
 /* End  Footer Component */
 
-
-
 /* Media devices */
 
 @media (max-width: 768px) {
-  
   header {
     margin-bottom: 10px;
   }
-  
-  .selector{
+
+  .selector {
     flex-wrap: wrap;
     display: block;
   }
@@ -299,7 +299,6 @@ footer {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
-  
   .main {
     min-height: 70vh;
     display: flex;
@@ -319,12 +318,15 @@ footer {
     padding: 10px;
     color: rgb(215 220 218);
   }
-  
+
   .color_selector {
     display: flex;
     flex-direction: column;
     height: 20em;
     margin-top: 20px;
+  }
+  .footer_list {
+    margin-bottom: 10px;
   }
 
   footer {
@@ -339,7 +341,7 @@ footer {
     border-width: 0.01px;
     margin-top: 30px;
   }
-  
+
   button {
     padding: 0.7em 2.7em;
   }
@@ -350,12 +352,11 @@ footer {
     justify-content: center;
     align-items: center;
     height: 150px;
+    gap: 10px;
     background-color: rgb(17, 24, 39);
   }
 
   .container {
     margin-top: 15px;
-
   }
-
 }
