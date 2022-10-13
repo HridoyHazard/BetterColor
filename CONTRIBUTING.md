@@ -1,3 +1,4 @@
+# Contributing Guide
 ### How to Contribute to this repository
 
 1. Fork the repository (Click the Fork button in the top right of this page, click your Profile Image)
@@ -38,3 +39,6 @@ git push origin branch-name
 * Make Sure you commit your changes in a new branch.
 * Make Sure you Give proper name to your files describing the addition.
 * Also Make Sure you comment your code wherever necessary.
+
+## Design Guide
+If you want to contribute to the user interface, you can check the [Design Guide](DESIGNGUIDE.md) for ideas. You can also update the Design Guide!
