@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import colorContrast from "color-contrast";
 import "./Home.css";
+import { AiFillFacebook } from "react-icons/ai";
+import Footer from "../components/footer";
 
 export default function Home() {
   const [color, setColor] = useState("#d7dcda");
@@ -133,70 +135,7 @@ export default function Home() {
         </div>
       </div>
       {/* Footer App */}
-      <footer className="footer">
-        <div className="footside">
-          <h1 className="footer_name">
-            <a title="" href="/">
-              BetterColor
-            </a>
-          </h1>
-          <ul className="footer_list">
-            <li class="footer_item">
-              <a title="about" href="/">
-                About
-              </a>
-            </li>
-            <li className="footer_item">
-              <a title="contact" href="/">
-                Contact
-              </a>
-            </li>
-            <li class="footer_item">
-              <a title="contact" href="/">
-                Support
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footside">
-          <p class="footer_text">Connect with us</p>
-          <div class="social">
-            <div className="social_icon">
-              <a title="FB" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/facebook-16x16-761599_vlf1xl.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="LI" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/linkedin-16x16-761611_a8dv2c.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="TW" href="">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/fa_twitter-16x16-761629_rhy95g.png"
-                />
-              </a>
-            </div>
-            <div className="social_icon">
-              <a title="GH" href="https://github.com/HridoyHazard/BetterColor">
-                <img
-                  alt="lo"
-                  src="https://res.cloudinary.com/slmedia/image/upload/v1664749375/samples/food/github-16x16-761603_vwximd.png"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <br />
-      </footer>
+      <Footer />
     </>
   );
 }
