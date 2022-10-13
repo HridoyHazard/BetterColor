@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
+import colorContrast from "color-contrast";
 import "./Home.css";
 import { AiFillFacebook } from "react-icons/ai";
 import Footer from "../components/footer";
 
 export default function Home() {
-  const [color, setColor] = useState("rgb(215 220 218)");
-  const [background, setBackground] = useState("rgb(17, 24, 39)");
+  const [color, setColor] = useState("#d7dcda");
+  const [background, setBackground] = useState("#111827");
+  const contrastRatio = colorContrast(color, background).toFixed(1);
 
   useEffect(() => {
     console.log(color);
@@ -104,6 +106,22 @@ export default function Home() {
               <p id="message">
                 Can You Read The Message Above Comfortably With This Background?
                 If Yes, Then Copy The Color Code. Else Try Changing Colors.
+                <p>
+                  WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1
+                  for normal text and 3:1 for large text.
+                </p>
+                <p>
+                  Your current selection has contrast ratio of{" "}
+                  {contrastRatio >= 4.5 ? (
+                    <span className="recommended">
+                      {contrastRatio} (Recommended for normal text)
+                    </span>
+                  ) : (
+                    <span className="notRecommended">
+                      {contrastRatio} (Not Recommended for normal text)
+                    </span>
+                  )}
+                </p>
               </p>
             </div>
           </div>
