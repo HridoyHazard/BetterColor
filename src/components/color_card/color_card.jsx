@@ -27,6 +27,7 @@ function ColorCard() {
         <ColorPickerContent>
           <h3>Select Color For Text:</h3>
           <input
+            style={{ cursor: 'pointer' }}
             type="color"
             id="text"
             defaultValue="#000000"
@@ -39,9 +40,10 @@ function ColorCard() {
         </ColorPickerContent>
       </ColorBox>
       <ColorBox>
-        <ColorPickerContent>
-          <p>Select Color For Background:</p>
+        <ColorPickerContent  style={{paddingLeft:'0',paddingRight:'0'}}>
+          <h3 style={{width:'fit-content'}}>Select Color For Background:</h3>
           <input
+            style={{ cursor: 'pointer' }}
             type="color"
             id="color"
             defaultValue="#ffffff"
