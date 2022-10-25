@@ -20,4 +20,8 @@ export const NavLink = styled.a`
   color: white;
   text-decoration: none;
   font-size: 1rem;
+  &:hover {
+    color: #efb22d;
+  }
 `;
+
