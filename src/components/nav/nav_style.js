@@ -5,7 +5,7 @@ export const NavWrapper = styled.ul`
   justify-content: flex-end;
   padding: 2rem;
   list-style: none;
-
+  background-color: rgb(17, 24, 39);
   @media (max-width: 800px) {
     justify-content: center;
   }
