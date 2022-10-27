@@ -24,8 +24,8 @@ function ColorCard() {
   return (
     <ColorWrapper>
       <ColorBox>
-        <ColorPickerContent>
-          <h3>Select Color For Text:</h3>
+        <ColorPickerContent style={{paddingLeft:'10',paddingRight:'10'}}>
+          <h3 style={{width: 'fit-content'}}>Select Color For Text:</h3>
           <input
             style={{ cursor: 'pointer' }}
             type="color"
