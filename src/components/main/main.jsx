@@ -37,7 +37,7 @@ function Main() {
         >
           <h2>Read This Message</h2>
           <p>
-            When you work for peace or any other aspect of social change, there
+            When you work for peace also or any other aspect of social change, there
             are often hardships to overcome. You must believe deeply that what
             you are doing is right, or else you may become discouraged and give
             up. I have found that there are no easy solutions to problems
