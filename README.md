@@ -2,7 +2,10 @@
 
 **Real-time WCAG color contrast checker.** Pick text + background colors, see live preview, get instant compliance result, copy CSS codes.
 
-![BetterColor Preview](https://hridoyhazard.github.io/BetterColor)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/HridoyHazard/BetterColor/main/app/icon.png" alt="BetterColor logo" width="150" height="150">
+</p>
+
 
 ---
 
